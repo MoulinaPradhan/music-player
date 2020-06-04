@@ -7,14 +7,38 @@
 
     <link rel="stylesheet" href="music.css" type="text/css">
      
-     <script src="https://kit.fontawesome.com/ba6aa46fb9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba6aa46fb9.js" crossorigin="anonymous"></script>
     <title>Music player</title>
 </head>
 
 
 <body>
+  <header id="header">
+    <div id="brand_image">
+      <a id="brand_icon"href=""><img src="https://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Music-icon.png"></a>
+    </div>
+    <h1>Mix player</h1>
+   <nav id="nav-bar">
+        <div class="searcher">
+    <input style="padding: 2%;font-size:1rem;position:relative;top:4vh;left:40%; width:29vw;" type="url" id="search" placeholder="Search"name='search'>
+
+ <a href=""><i style="font-size:1.5rem;position: relative;top:80%;right:-11vw;"class="fas fa-search"></i>
+</a>
+<a href=""><i style="color:grey;position:relative;right:-12vw;top:5vh;transform: rotate(-90deg);font-size: 2rem;" class="fas fa-chevron-down"></i></a>
+
+     </div>
+<a href=""style="display:inline-block;">
+<i style="color:darkslategrey;font-size:2rem;position:relative;top:5vh;right:-12vw;"class="far fa-bell"></i></a>
+   </nav>
+
+    
+  </header>
+
+ 
     <div class="container">
         <main class="main_container">
+
+          <!--recently played--> 
           <section id="new_arrivals">
              <div class="headings">
               <span>&emsp;
@@ -42,8 +66,58 @@
 <li><a href="#zayn"class="pic_of_new_arrivals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWCS9_GB1XuYOXlLre1TIltuNcWRhkdQwkIuIMopvGUcZt3UiT&usqp=CAU"height="100%">
         <span>divide</span></a>
         </li>
+<!--trending section--> 
+<section id="trending_songs">
+  <div class="headings">
+              <span>
+                   trending
+              </span>
+               </div>
+               <div class="pic">
+                <a href="#" class="block_img">
+                  <img src="https://paglasongs.com/uploads/thumb/sft2/703_4.jpg">
+                </a>
 
 
+ <a href="#"class="block_img">
+                  <img src="https://www.versuri-lyrics.info/videos/uploads/thumbs/607a37423-1.jpg">
+                </a>
+
+
+
+                <a href="#" class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSldnxRgNat8jCdPf5ydSImUpzah8QDDTYIvIAB-1vm-U9YWxBA&usqp=CAU">
+                </a>
+                <a href="#"class="block_img">
+                  <img src="https://i.pinimg.com/originals/1c/a3/e3/1ca3e3f84f37808fb53ddba55d89b166.jpg">
+                </a>
+
+
+
+                <a href="#" class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2-h6TNe1S5yPUKnPBCwBlHD1BspHM_HYVPRCatpJNC67uWRb_&usqp=CAU">
+                </a>
+
+                <a href="#"class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOLyNnxlbuzSDDkPulWuuvmWg469eSXqxoWuMGGVfwctyLdm1X&usqp=CAU">
+                </a>
+
+                <a href="#" class="block_img">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/51%2BQGHXUssL._SX373_BO1,204,203,200_.jpg">
+                </a>
+                <a href="#" class="block_img">
+                  <img src="https://i.ytimg.com/vi/odrml3vYQjE/maxresdefault.jpg">
+                </a>
+
+
+
+
+               </div>
+
+
+
+<!--popular artist section(eng)--> 
+</section>
 <section id="popular_eng">
            
             <div class="headings">
@@ -85,7 +159,7 @@
 </section>
 
 
-
+<!--popular artist section(hindi)--> 
 
  <section id="popular_hindi">
            
@@ -126,7 +200,7 @@
 </ul> 
 </div> 
 </section>
-
+<!--popular artist section(r&b)--> 
 <section id="r&b/hip-hop">
            
             <div class="headings">
@@ -142,7 +216,7 @@
         </li>
  
        <li><a href="#harry"class="pic_of_song"><img src="https://wikibio.in/wp-content/uploads/2019/01/Emiway-Bantai.jpg">
-       <span>&emsp; emiway <span></a>
+           <span>&emsp; emiway </span></a>
         </li>
         
         
@@ -152,7 +226,7 @@
         
         
          <li><a href="#katty" class="pic_of_song"><img src="https://static.billboard.com/files/2020/04/eminem-press-photo-2019-aqu-billboard-1548-1587659998-768x508.jpg">
-       <span>&emsp; Eminem<span></a>
+             <span>&emsp; Eminem</span></a>
         </li>
 
            <li><a href="#charlie"class="pic_of_song"><img src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/7/3/90f9fd5231c6494885180a068f906660_18.jpg">
@@ -160,13 +234,111 @@
         </li>
  
             
-             <li><a href="#katty"class="pic_of_song"><img id="ho" src="https://img.etimg.com/thumb/width-640,height-480,imgsize-25253,resizemode-1,msid-44406506/too-woo-youth-inld-ropes-in-yo-yo-honey-singh.jpg">
+             <li><a href="#zayn"class="pic_of_song"><img id="ho" src="https://img.etimg.com/thumb/width-640,height-480,imgsize-25253,resizemode-1,msid-44406506/too-woo-youth-inld-ropes-in-yo-yo-honey-singh.jpg">
        <span>honey singh</span></a>
         </li>
-</ul> 
+     </ul> 
 </div> 
 </section>
+<!--party nights-->
+<section id="party_items">
+  <div class="headings">
+              <span>
+                   Party Nights
+              </span>
+               </div>
+               <div class="pic">
+                <a  href="#"class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXGjPb9bNB-L4jEev3DmPtuWLqf1N0pxyoeBtCVeK2h4GdWchP&usqp=CAU">
+                </a>
 
+
+<a href="#" class="block_img">
+                  <img src="https://vignette.wikia.nocookie.net/the-bangtan-boys/images/0/09/Make_It_Right_%28feat._Lauv%29_%28EDM_Remix%29_Cover.jpg/revision/latest?cb=20191101031359">
+                </a>
+
+
+
+                <a href="#"class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIq0mURHUi7yHWHMv-Dn5Mh6ARzcuy4ybFdQNbHytot0jxqWc_&usqp=CAU">
+                </a>
+                <a href="#"class="block_img">
+                  <img src="https://edmboost.org/wp-content/uploads/2019/12/1-308.jpg">
+                </a>
+
+
+
+                <a href="#" class="block_img">
+                  <img src="https://cdn-images-1.listennotes.com/podcasts/mixmatt-x-radio-jeff-mattx-dLx-F6efh0s-jc857gktNye.1400x1400.jpg">
+                </a>
+
+                <a href="#"class="block_img">
+                  <img src="https://c.saavncdn.com/863/EDM-FloorFillers-Vol-4-English-2017-500x500.jpg">
+                </a>
+
+                <a href="#"class="block_img">
+                  <img src="https://i1.sndcdn.com/artworks-000659420539-sps4fr-t500x500.jpg">
+                </a>
+                <a href="#"class="block_img">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSc-oUpuJrbDE1nHxYEyau6nnqE5TFZeEts9CNxAG3NaO0fbFjW&usqp=CAU">
+                </a>
+
+
+
+
+               </div>
+
+
+
+
+</section>
+ 
+<!-- individual playlist-->
+ <div id="zayn">
+  <a href="#"><i class="fas fa-chevron-down"></i><x</a>
+<div class="big_pic">
+  <img src="https://www.onthisday.com/images/people/zayn-malik-medium.jpg">
+<div class="name_of_the_singer">
+  <span>zayn malick<i class="fas fa-download"></i></span>
+</div>
+<div id="artists_songs">
+<ul class="download_list" type="none">
+<span><i class="fal fa-bell"><i class="fas fa-bell"></i></i><i class="fal fa-comment"></i></span>
+<li><a href="">Ae Zindagi Gale Laga Le<i class="fas fa-download"></i> </a></li>
+  <li><a href=""><i class="fas fa-download"></i><i class="fas fa-bell"></i>Aise Na Mujhe Tum Dekho <i class="fas fa-download"></i></a></li>
+ 
+    <li><a href="">Bahon Mein Chale Aao<i class="fas fa-download"></i></a></li>
+   
+      <li><a href="">Hello Hello<i class="fas fa-download"></i></a></li>  
+        <li><a href="">High Heel<i class="fas fa-download"></i></a> </li>
+        <li><a href="">  Haal-E-Dil<i class="fas fa-download"></i></a> </li>
+          <li><a href="">Hauley Hauley <i class="fas fa-download"></i></a></li>
+           
+
+
+
+           
+
+<li><a href="">Kehna Hi Kya<i style="color:white;z-index: 3;" class="fas fa-download"></i></a></li>
+<li><a href="">Kudiye Ajj Kunwayi</a></li>
+<li><a href="">Kaisi Hai Zindgani </a></li>
+<li><a href="">Kitte Chaliye</a></li>
+<li><a href="">Kaise Bataoon</a> </li>
+</ul>
+
+
+</div>
+
+
+
+ </div>
+ 
+ 
+ 
+ 
+  
+    
+        </main>
 
 
             
@@ -176,33 +348,44 @@
 
 
 
-
-        </main>
+<!--aside section-->
+        
         <aside>
 
         <div class="searcher">
     <input type="url" id="search" placeholder="Your Downloads"name='search'>
+
  <a href=""><i class="fas fa-search"></i></a>
+
+ <a href=""><i style="color:white;position:relative;left:-96%;transform: rotate(-90deg);" class="fas fa-chevron-down"></i></a>
      </div>
+
 
 
         <div id="download_songs">
    <div class="downloads">
  <span>downloads</span>
+ <div class="dropdown_list">
+  <button class="dropdown">Quque&nbsp;<i class="fas fa-chevron-down"></i></button>
+  <div class="contents">
+    <a href="#zayn">Play list</a>
+<a href="#zayn">Favourite songs</a>
+  </div>
+</div>
 </div>
 <div class="download">
 <ul class="download_list" type="none">
   <span>A</span>
 
-  <li><a href="">Ae Zindagi Gale Laga Le</a></li>
-  <li><a href="">Aise Na Mujhe Tum Dekho</a></li>
+  <li><a href="">Ae Zindagi Gale Laga Le </a></li>
+  <li><a href="">Aise Na Mujhe Tum Dekho </a></li>
   <span>B</span>
     <li><a href="">Bahon Mein Chale Aao</a></li>
     <span>H</span>
       <li><a href="">Hello Hello</a></li>  
         <li><a href="">High Heel</a> </li>
         <li><a href="">  Haal-E-Dil</a> </li>
-          <li><a href="">Hauley Hauley </li></a>
+          <li><a href="">Hauley Hauley </a></li>
            
 <span>K</span>
 <li><a href="">Kehna Hi Kya</a></li>
@@ -210,19 +393,15 @@
 <li><a href="">Kaisi Hai Zindgani </a></li>
 <li><a href="">Kitte Chaliye</a></li>
 <li><a href="">Kaise Bataoon</a> </li>
-  </ul>
-
+</ul>
  </div>
 </div>
 </aside>
-  <div class="audio-file">
+ <!-- <div class="audio-file">
    <audio src="AViewFromEarth.mp3"controls>
-   </audio> 
+   </audio>--> 
   </div>      
-        
-        
-        
-    </div>
+</div>   
 </body>
 
 </html>
