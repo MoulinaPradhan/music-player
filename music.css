@@ -139,26 +139,47 @@ li a{
 .downloads span{
     color:white;
     font-size:1rem!important;
+    margin-top: 2%!important;
     margin-left: -7%;
 }
-#emoji a{
-display:block;
-height:2vh;
-width:4vw;
-color:white!important;
+.name_of_the_singer{
+    color:white;
+    text-transform: capitalize;
+    font-size: 1.5rem!important;
+    position: absolute;
+    top:2%!important;
+    right:20%;
 }
-#emoji a i{
 
-height:2vh;
-width:4vw;
-color:white!important;
+#emoji a{
+display:none;
+height:1vh;
+width:1vw;
+color:white;
 }
 #hearts{
-    border:2px solid white;
-    width:4vw;
-    position: absolute;
-    top:6%;
+    /*border:2px solid white;*/
+    width:10vw;
+    position: relative;
+    bottom: 80%;
+left:89%;
 }
+#about p{
+color:white;
+height:auto;
+width:30vw;
+display: flex;
+/*border:2px solid green;*/
+position:relative;
+
+font-size: 0.6rem!important;
+}
+#about p i{
+    font-size: 1rem;
+    color:pink;
+
+}
+ 
 }
 
 
@@ -174,6 +195,17 @@ color:white!important;
     border:27px solid black;
    
 } 
+#header h1{
+    text-shadow: 2px -1px #decbcb;
+    margin-left: 1%;
+}
+#brand_icon{
+    height:7vh!important;
+    width:5.5vw!important;
+    display:block;
+    top:3%;
+    margin-left: 10%;
+}
 .pic{
     display: flex;
     flex-direction: row;
@@ -235,6 +267,10 @@ aside{
     font-size:1.2rem !important;
 
 }
+.download span{
+position:relative;
+top:2%!important;
+}
 .download_list li a::before{
     content:"";
     display:block;
@@ -258,9 +294,36 @@ aside{
     text-transform: capitalize;
     font-size: 3rem !important;
     position: absolute;
-    top:18%;
+    top:2%!important;
     left:42%!important;
 }
+#about p{
+color:white;
+display: flex;
+font-size: 1rem;
+}
+#emoji a{
+display:block;
+height:2vh;
+width:4vw;
+color:white;
+}
+#hearts{
+   /* border:2px solid white;
+*/    width:4vw;
+    position: relative;
+    bottom: 47%;
+left:89%;
+}
+ #slider figure img{
+    height:50vh!important;
+    position: relative;
+    
+        width:20%;
+        
+        margin:auto;
+        float: left;
+    }
 
 }
 
@@ -282,6 +345,7 @@ li span{
 
     
 }
+
 /*position of the image of the singer*/
 
 .songs_list li{
@@ -444,8 +508,8 @@ position:fixed;
 
 .dropdown_list{
     position:absolute;
-    left:40%;
-    top:2%;
+    left:60%;
+    top:4%;
     margin-right: -10%;
     box-shadow: 0px 0px 14px 16px solid black;
 
@@ -503,16 +567,71 @@ transform:scaleX(1.2);
     margin-left:-4%;
 }
 /*hearts and icons*/
-#emoji a{
-display:block;
-height:2vh;
-width:4vw;
-color:white;
-}
-#hearts{
-    border:2px solid white;
-    width:4vw;
+
+#slider{
+        overflow: hidden;
+        margin-left: 1%;
+        margin-top: 5%;
+    
+
+    }
+    #slider figure{
+        margin:0%;
+        position: relative;
+        left:10%;
+        width:500%;
+
+        animation:20s slider infinite;
+    }
+    #slider figure img{
+    height:40vh;
     position: relative;
-    bottom: 47%;
-left:89%;
+    
+        width:20%;
+        
+        margin:auto;
+        float: left;
+    }
+    @keyframes slider{
+0%{
+    left:0;
+    
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+45%{
+    left:-100%;
+}
+50%{
+    left:-200%;
+}   
+70%{
+    left:-200%;
+}
+75%{
+    left:-300%;
+}
+95%{
+    left:-300%;
+}
+100%{
+    left:-400%;
+}
+}
+figure img:hover{
+    transform:scale(1.5,2);
+}
+#about p{
+color:white;
+display: flex;
+font-size: 1rem;
+}
+#about p i{
+    font-size: 1rem;
+    color:pink;
+
 }
